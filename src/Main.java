@@ -1,5 +1,5 @@
 import srpfacadelab.IGameEngine;
-import srpfacadelab.RpgPlayer;
+import srpfacadelab.PlayerFacade;
 import srpfacadelab.SimpleGameEngine;
 
 public class Main {
@@ -8,8 +8,8 @@ public class Main {
         //This is meant to be simple and just show how you could instantiate the structure
 
         IGameEngine game = new SimpleGameEngine();
-        RpgPlayer player1 = new RpgPlayer(game);
-        RpgPlayer player2 = new RpgPlayer(game);
+        PlayerFacade player1 = new PlayerFacade(game);
+        PlayerFacade player2 = new PlayerFacade(game);
         ((SimpleGameEngine) game).addPlayer(player1);
         ((SimpleGameEngine) game).addPlayer(player2);
 

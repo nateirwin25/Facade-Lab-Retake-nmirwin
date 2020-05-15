@@ -6,17 +6,17 @@ import java.util.List;
 public class SimpleGameEngine implements IGameEngine {
 
     private List<IEnemy> enemies;
-    private List<RpgPlayer> players;
+    private List<PlayerFacade> players;
 
     public SimpleGameEngine(){
         enemies = new ArrayList<IEnemy>();
         enemies.add(new SimpleEnemy("Creeper"));
         enemies.add(new SimpleEnemy("Zombie"));
         enemies.add(new SimpleEnemy("Golem"));
-        players = new ArrayList<RpgPlayer>();
+        players = new ArrayList<PlayerFacade>();
     }
 
-    public void addPlayer(RpgPlayer player){
+    public void addPlayer(PlayerFacade player){
         players.add(player);
     }
 
